@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif
+}
+
+body {
+    max-width: 100vw;
+    display: flex;
+}
+
+
+/* tag form */
+.campo-inserir-dados {
+    width: 15rem;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    outline: 3px solid rgb(105, 104, 104);
+    background-color: rgb(223, 206, 180);
+    box-shadow: 5px 5px 10px rgb(105, 104, 104), -5px 5px 10px rgb(105, 104, 104);
+}
+
+/* inputs da tag form */
+.campo-inserir-dados input {
+    width: 7em;
+    height: 30px;
+    box-sizing: border-box;
+    padding: 1em;
+    margin-bottom: .5em;
+    background-color: rgb(236, 234, 229);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 2px solid rgb(105, 104, 104);
+    border-radius: 5px;
+}
+
+#aluno {
+    width: 15em;
+    height: 30px;
+    margin: 1em;
+    margin-top: 0;
+    box-sizing: border-box;
+    background-color: rgb(236, 234, 229);
+}
+
+.form-translate-down {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 200px;
+    transform: translateY(-300px);
+}
+
+.button-activate-translate {
+    width: 100%;
+    height: 3em;
+    display: block;
+    cursor: pointer;
+    outline: 3px solid rgb(105, 104, 104);
+    border: none;
+    background-color: rgb(192, 182, 140);
+    color: white;
+    font-size: 1rem;
+    font-weight: 20px;
+    box-shadow: 5px 5px 10px rgb(105, 104, 104), -5px 5px 10px rgb(105, 104, 104);
+}
+
+.button-activate-translate:hover {
+    background-color: rgb(199, 194, 175);
+}
+
+.form-buttons-container {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    bottom: 8px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(223, 206, 180);
+}
+
+.form-buttons-container .form-button {
+    width: 5em;
+    height: 2em;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.input-container {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(223, 206, 180);
+}
+
+label {
+    background-color: rgb(223, 206, 180);
+}
+

@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-image: url(../Images/Background-madeira.avif);
+    background-size: contain;
+}
+
+th {
+    text-align: center;
+    width: 5em;
+    padding: 1em;
+    border-bottom: 3px solid rgb(145, 101, 35);
+    background-color: rgb(209, 165, 98);
+}
+/* celulas */
+.linha td {
+    text-align: center;
+    padding: 1em;
+    border-bottom: 2px dotted rgb(145, 101, 35);;
+}
+
+.linha:nth-child(odd){
+    background-color: rgb(223, 206, 180);
+}
+
+.tabela-container {
+    display: flex;
+    justify-content: center;
+    width: 40em;
+    height: fit-content;
+    position: relative;
+    left: 120px;
+}
+
+.decoracao-direita {
+    width: 5rem;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    background-color: rgb(243, 242, 240);
+    box-shadow: 0 -10px 30px rgb(151, 150, 148);
+    background-image: url(../Images/Background-madeira.avif);
+}
+
+.decoracao-esquerda {
+    width: 5rem;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    background-color: rgb(243, 242, 240);
+    box-shadow: 0 10px 30px rgb(151, 150, 148);
+    background-image: url(../Images/Background-madeira.avif);
+}
+

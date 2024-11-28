@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/tabela.css">
+    <link rel="stylesheet" href="CSS/formulario.css">
+    <title>Tabela interativa</title>
+</head>
+<body>
+    <div class="decoracao-esquerda"></div>
+    <div class="decoracao-direita"></div>
+    
+    <div class="tabela-container">
+        <table id="tabela">
+            <!-- cabeçalho da tabela -->
+             <tr>
+                <th>Aluno</th>
+                <th nota="nota-1">Nota 1</th>
+                <th nota="nota-2">Nota 2</th>
+                <th nota="nota-3">Nota 3</th>
+                <th nota="nota-4">Nota 4</th>
+                <th nota="media">Média</th>
+             </tr>
+         </table>
+    </div>
+     
+    <!-- div que vai ter o transform quando o botão é ativo -->
+    <div class="form-translate-down">
+        <!-- campo de inserir dados -->
+        <form class="campo-inserir-dados">
+            
+            <label class="titulo" for="aluno">Nome do aluno:</label>
+            <input type="text" id="aluno">
+            
+            <div class="input-container">
+                <label class="titulo" for="nota1">Nota 1:</label>
+                <input type="text" id="nota1">    
+            </div>
+
+            <div class="input-container">
+                <label class="titulo" for="nota2">Nota 2:</label>
+                <input type="text" id="nota2">    
+            </div>
+
+            <div class="input-container">
+                <label class="titulo" for="nota3">Nota 3:</label>
+                <input type="text" id="nota3">    
+            </div>
+
+            <div class="input-container">
+                <label class="titulo" for="nota4">Nota 4:</label>
+                <input type="text" id="nota4">    
+            </div>
+
+            <div class="form-buttons-container">
+                <button class="btn-submit form-button">Enviar</button>
+                <button class="btn-delete form-button">Limpar</button>
+            </div>
+        </form>
+        <!-- botão que vai ativar a prop transform -->
+        <button id="btn" class="button-activate-translate">
+            Inserir notas
+        </button>
+    </div>
+     
+    <script src="Javascript/index.js"></script>
+    <script src="Javascript/dom.js"></script>
+</body>
+</html>
